@@ -3,8 +3,9 @@ namespace Assignment2.Tests;
 public class DelegatesTests
 {
     [Fact]
-    public void Test1()
+    public void Check_If__Reverse_Returns__retcarach()
     {
 
     }
+
 }
