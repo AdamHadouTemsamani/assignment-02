@@ -1,14 +1,9 @@
+using System.Security.Cryptography.X509Certificates;
+
 namespace Assignment2.Tests;
 
 public class WizardTests
 {
-    [Fact]
-    public void WizardCollection_contains_2_wizards()
-    {
-        var wizards = WizardCollection.Create();
-
-        Assert.Equal(2, wizards.Count());
-    }
 
     [Theory]
     [InlineData("Darth Vader", "Star Wars", 1977, "George Lucas")]
@@ -19,5 +14,8 @@ public class WizardTests
 
         Assert.Contains(wizards, w => w == new Wizard(name, medium, year, creator));
     }
+
+    
+    
 }
 
