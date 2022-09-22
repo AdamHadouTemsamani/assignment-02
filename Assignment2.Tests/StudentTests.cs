@@ -81,6 +81,7 @@ public class StudentTests
         
         //Assert
         Assert.Equal("ImmutableStudent { Id = 10, GivenName = Per, Surname = Hansen, StartDate = "+student.StartDate.ToString()+", EndDate = , GraduationDate = "+ student.GraduationDate.ToString()+", Status = Active }",student.ToString());
+        //We noticed that the ToString() method on DateTime objects gave slightly different results on different computers, so we put in the literal methods in the expected string, to prevent false test failures.
     }
     
     [Fact]
