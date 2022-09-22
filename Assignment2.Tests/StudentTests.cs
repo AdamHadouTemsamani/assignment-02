@@ -80,7 +80,7 @@ public class StudentTests
             new DateTime(2024, 6, 29));
         
         //Assert
-        Assert.Equal("ImmutableStudent { Id = 10, GivenName = Per, Surname = Hansen, StartDate = 29-08-2021 00:00:00, EndDate = , GraduationDate = 29-06-2024 00:00:00, Status = Active }",student.ToString());
+        Assert.Equal("ImmutableStudent { Id = 10, GivenName = Per, Surname = Hansen, StartDate = "+student.StartDate.ToString()+", EndDate = , GraduationDate = "+ student.GraduationDate.ToString()+", Status = Active }",student.ToString());
     }
     
     [Fact]
